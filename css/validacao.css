@@ -1,0 +1,85 @@
+        body {
+            background-color: #EBEBE4;
+        }
+
+        .titulo {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 4%;
+            color: #7a7a7a;
+        }
+
+        #msg-erro {
+            color: red;
+        }
+
+        .cadastro {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: white;
+            width: 80%;
+            height: auto;
+            float: left;
+            padding: 3% 4%;
+            /*margin-left: 200px;*/
+            border-radius: 20px;
+        }
+
+        .btn-salvar {
+            float: right;
+            width: auto;
+            color: white;
+            background-color: #0076a5;
+            padding: 1%;
+            border: none;
+            margin-top: 2%;
+            margin-right: 1%;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .btn-salvar:hover {
+            background-color: #00b7ff;
+        }
+
+        .btn-cancelar {
+            float: right;
+            width: auto;
+            color: white;
+            background-color: #a32000;
+            padding: 1%;
+            border: none;
+            margin-top: 2%;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .btn-cancelar:hover {
+            background-color: #ef2f00;
+        }
+
+        .cadastro input[type=text],
+        input[type=password],
+        input[type=email],
+        input [type=number] {
+            width: 100%;
+            padding: 1%;
+            border: 1px solid #0076a5;
+            border-radius: 8px;
+        }
+
+        .cadastro input[type=text]:focus,
+        input[type=password]:focus,
+        input[type=email]:focus,
+        input [type=number]:focus {
+            border: 1px solid #00b7ff;
+        }
+
+        .cadastro label {
+            color: #7a7a7a;
+            font-size: 1em;
+        }

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Descrição da página -->
+	<meta name="description" content="Projeto de exemplo responsivo usando HTML e CSS">
+	<!-- Palavras chave para motores de busca -->
+	<meta name="keywords" content="HTML, CSS, Web">
+	<!-- Páginas indexadas nos sistemas de buscas -->
+	<meta name="robots" content="index, follow">
+	<!-- Autor da página -->
+	<meta name="Author" content="Mirelly&Sávio">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/estilo.css">
+	<!-- Título -->
+	<title>Loja virtual de Celulares</title>
+	<!-- Links externos - Fonte Lato e Biblioteca de ícones fonts awesome -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Largura da página de acordo com o dispositivo atual -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
+</head>
+<body>
+	<header class="cabecalho container">
+       <a href="index.html">
+           <div class="logo"></div>
+       </a>
+        <div class="title">
+            <h1>Smart Tech</h1>
+        </div>
+        <button class="btn-menu">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <nav class="menu-mobile">
+            <a class="btn-close color-branco"><i class="fa fa-times"></i></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="#celulares">Celulares</a></li>
+                    <li><a href="#rodape">Contato</a></li>
+                </ul>
+        </nav>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cadastro.html">Cadastre-se</a></li>
+				<li><a href="#celulares">Celulares</a></li>
+				<li><a href="#rodape">Contato</a></li>
+			</ul>
+		</nav>   
+
+		<div class="box">
+    		<input type="text" class="search" name="search"/>
+    		<button class="btn"> <i class="fas fa-search"></i> </button>
+		</div> 
+	</header>
+        
+    </div>
+    
+        <div>
+           <nav class="menu-2">
+                <ul>
+                    <li><a href="#">seja prime</a></li>
+                    <li><a href="#">dia das mães</a></li>
+                    <li><a href="#">novo galaxy m</a></li>
+                    <li><a href="#">cupom</a></li>
+                    <li><a href="#">ST mundo</a></li>
+                    <li><a href="#">ST empresas</a></li>
+                    <li><a href="#">outlet</a></li>
+                </ul>
+            </nav> 
+        </div>
+		
+
+
+	        <!-- BANNER -->
+    	<div class="banner">
+         	<img src="img/banner-2.jpg" alt="">   
+        </div>
+
+            <!-- NEWSLETTER -->
+        <div class="newsletter">
+                <p>
+                    Inscreva-se na nossa Newsletter e receba ofertas exclusivas
+                </p>
+                <div class="box">
+                    <input type="text" class="search" name="search" placeholder="seuemail@email.com" />
+                    <button class="btn">OK</button>
+                </div> 
+            
+        </div>
+
+
+        <div id = 'celulares' class="celulares container">
+
+            <div class="servico">
+                <a href="#"><img src="img/1.png"></a>
+            
+                <div class="inner">
+                    <a href="#">Smartphone Samsung Galaxy J6 32GB Dual Chip Android 8.0 Tela 5.6" Octa-Core 1.6GHz 4G Câmera 13MP com TV - Prata</a>
+                    <h4>R$ 929,00</h4>
+                    <p> ou 9x de R$ 103,22 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="servico">
+                <a href="#"><img src="img/2.jpg" alt="Marketing Digital"></a>
+                
+                <div class="inner">
+                    <a href="#">Smartphone Motorola Moto G7 Play 32GB Dual Chip Android Pie - 9.0 Tela 5.7" 1.8 GHz Octa-Core 4G Câmera 13MP - Indigo</a>
+                    <h4>R$ 940,00</h4>
+                    <p> ou 9x de R$ 104,44 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="servico">
+                <a href="#"><img src="img/3.png" alt="Criação de Sites"></a>
+                    
+                <div class="inner">
+                    <a href="#">Smartphone Motorola Moto G6 Play Dual Chip Android Oreo - 8.0 Tela 5.7" Octa-Core 1.4 GHz 32GB 4G Câmera 13MP - Ouro</a>
+                    <h4>R$ 887,78</h4>
+                    <p> ou 8x de R$ 110,97 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="servico">
+                <a href="#"><img src="img/6.png" alt="Criação de Sites"></a>
+                    
+                <div class="inner">
+                    <a href="#">Smartphone Samsung Galaxy S9 Dual Chip Android 8.0 Tela 5.8" Octa-Core 2.8GHz 128GB 4G Câmera 12MP - Preto</a>
+                    <h4>R$ 2.699,00</h4>
+                    <p> ou 10x de R$ 269,90 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="servico">
+                <a href="#"><img src="img/7.jpg" alt="Criação de Sites"></a>
+                    
+                <div class="inner">
+                    <a href="#">Smartphone Samsung Galaxy A50 64GB Dual Chip Android 9.0 Tela 6,4" Octa-Core 4G Câmera Tripla 25MP + 5MP + 8MP - Azul</a>
+                    <h4>R$ 1.999,00</h4>
+                    <p> ou 10x de R$ 199,90 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+                        <div class="servico">
+                <a href="#"><img src="img/4.png" alt="Criação de Sites"></a>
+                    
+                <div class="inner">
+                    <a href="#">Smartphone Samsung Galaxy J8 64GB Dual Chip Android 8.0 Tela 6" Octa-Core 1.8GHz 4G Câmera 16MP F1.7 + 5MP F1.9 (Dual Cam) - Prata</a>
+                    <h4>R$ 1.299,00</h4>
+                    <p> ou 10x de R$ 129,90 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="servico">
+                <a href="#"><img src="img/5.png" alt="Criação de Sites"></a>
+                    
+                <div class="inner">
+                    <a href="#">Smartphone Samsung Galaxy J5 Prime Dual Chip Android 6.0 Tela 5" Quad-Core 1.4 GHz 32GB 4G Wi-Fi Câmera 13MP com Leitor de Digital - Rosa</a>
+                    <h4>R$ 699,00</h4>
+                    <p> ou 7x de R$ 99,85 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="servico">
+                <a href="#"><img src="img/1.png"></a>
+            
+                <div class="inner">
+                    <a href="#">Smartphone Samsung Galaxy J6 32GB Dual Chip Android 8.0 Tela 5.6" Octa-Core 1.6GHz 4G Câmera 13MP com TV - Prata</a>
+                    <h4>R$ 929,00</h4>
+                    <p> ou 9x de R$ 103,22 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="servico">
+                <a href="#"><img src="img/2.jpg" alt="Marketing Digital"></a>
+                
+                <div class="inner">
+                    <a href="#">Smartphone Motorola Moto G7 Play 32GB Dual Chip Android Pie - 9.0 Tela 5.7" 1.8 GHz Octa-Core 4G Câmera 13MP - Indigo</a>
+                    <h4>R$ 940,00</h4>
+                    <p> ou 9x de R$ 104,44 s/ juros</p>
+                    <button class="btn-comprar btn"> Comprar <i class="fas fa-shopping-basket"></i></button>
+                    <button class="btn-adc-carrinho btn"> Adicionar ao carrinho <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+        </div>
+    <footer id = 'rodape' class="rodape-prin container">
+    	<nav class="menu-rodape">
+			<ul>
+				<li><a href="#">televendas 4003-1000</a></li>
+				<li><a href="#">atendimento</a></li>
+				<li><a href="#">cartão americanas.com</a></li>
+				<li><a href="#">ame digital</a></li>
+				<li><a href="#">lista de casamento</a></li>
+				<li><a href="#">anuncie</a></li>
+				<li><a href="#">marketplace</a></li>
+			</ul>
+		</nav>
+        
+        <div class="icones-sociais">
+            <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Icone do Twitter"></a>
+            <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Icone do Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Icone do Instagram">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="Icone do Linked in"></a>
+        </div>
+        <br>
+        <div class="copy"> &copy; Mirelly&Sávio 2019  </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

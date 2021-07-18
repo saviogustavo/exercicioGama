@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Descrição da página -->
+	<meta name="description" content="Projeto de exemplo responsivo usando HTML e CSS">
+	<!-- Palavras chave para motores de busca -->
+	<meta name="keywords" content="HTML, CSS, Web">
+	<!-- Páginas indexadas nos sistemas de buscas -->
+	<meta name="robots" content="index, follow">
+	<!-- Autor da página -->
+	<meta name="Author" content="Mirelly&Sávio">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/validacao.css">
+	<!-- Título -->
+	<title>Loja virtual de Celulares</title>
+	<!-- Links externos - Fonte Lato e Biblioteca de ícones fonts awesome -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Largura da página de acordo com o dispositivo atual -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
+	<script>
+
+        function validarFormulario() {
+
+            if (document.getElementById('nome').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o nome corretamente!';
+                document.getElementById('nome').focus();
+                return false;
+            }
+
+            else if (document.getElementById('email').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o E-mail corretamente!';
+                document.getElementById('email').focus();
+                return false;
+            }
+
+            else if (document.getElementById('telefone').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o Telefone corretamente!';
+                document.getElementById('telefone').focus();
+                return false;
+            }
+
+            else if (document.getElementById('celular').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o Celular corretamente!';
+                document.getElementById('celular').focus();
+                return false;
+            }
+
+            else if (document.getElementById('cpf').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o CPF corretamente!';
+                document.getElementById('cpf').focus();
+                return false;
+            }
+
+            else if (document.getElementById('senha').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha a senha corretamente!';
+                document.getElementById('senha').focus();
+                return false;
+            }
+
+            else if (document.getElementById('repetir-senha').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha a senha duas vezes!';
+                document.getElementById('repetir-senha').focus();
+                return false;
+            }
+
+            else if (document.getElementById('senha').value != document.getElementById('repetir-senha').value) {
+                document.getElementById('msg-erro').innerHTML = 'Erro: A senhas não conferem!';
+                document.getElementById('repetir-senha').focus();
+                return false;
+            }
+
+            else if (document.getElementById('rua').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha a Rua corretamente!';
+                document.getElementById('rua').focus();
+                return false;
+            }
+
+            else if (document.getElementById('numero').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o Número corretamente!';
+                document.getElementById('numero').focus();
+                return false;
+            }
+
+            else if (document.getElementById('bairro').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o Bairro corretamente!';
+                document.getElementById('bairro').focus();
+                return false;
+            }
+
+            else if (document.getElementById('cep').value == '') {
+                document.getElementById('msg-erro').innerHTML = 'Erro: Preencha o CEP corretamente!';
+                document.getElementById('cep').focus();
+                return false;
+            }
+
+            else {
+                document.getElementById('msg-erro').innerHTML = 'Cadastro realizado com Sucesso!';
+                return true;
+            }
+        }
+
+
+        $(document).ready(function () { 
+            var $seuCampoCpf = $("#cpf");
+            $seuCampoCpf.mask('000.000.000-00');
+        });
+
+        $(document).ready(function () { 
+            var $seuCampoTelefone = $("#telefone");
+            $seuCampoTelefone.mask('(00)0000-0000');
+        });
+
+         $(document).ready(function () { 
+            var $seuCampoCelular = $("#celular");
+            $seuCampoCelular.mask('(00)0.0000-0000');
+        });
+
+        $(document).ready(function () { 
+            var $seuCampoCep = $("#cep");
+            $seuCampoCep.mask('00.000-000');
+        });
+
+        $(document).ready(function () { 
+            var $seuCampoNum = $("#numero");
+            $seuCampoNum.mask('00000');
+        });
+    </script>
+</head>
+
+<body>
+	<header class="cabecalho">
+		<a href="index.html">
+			<h1 class="logo">Smart Tech</h1>
+		</a>
+		<a href="index.html">
+			<h1>Smart Tech</h1>
+		</a>
+        <button class="btn-menu">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <nav class="menu-mobile">
+            <a class="btn-close color-branco"><i class="fa fa-times"></i></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#rodape">Contato</a></li>
+                </ul>
+        </nav>
+
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#rodape">Contato</a></li>
+			</ul>
+		</nav>
+
+		<div class="box">
+    		<input type="text" class="search" name="search"/>
+    		<button class="btn"> <i class="fas fa-search"></i></button>
+		</div> 
+	</header>
+
+
+		<nav class="menu-2">
+			<ul>
+				<li><a href="#">seja prime</a></li>
+				<li><a href="#">dia das mães</a></li>
+				<li><a href="#">novo galaxy m</a></li>
+				<li><a href="#">cupom</a></li>
+				<li><a href="#">ST mundo</a></li>
+				<li><a href="#">ST empresas</a></li>
+				<li><a href="#">outlet</a></li>
+			</ul>
+		</nav>	
+
+
+
+	<div class="cadastro">
+        <form>
+            <h1 class="titulo">Dados Pessoais do Cliente</h1>
+            <h4 id="msg-erro"></h4>
+            <br/>
+            <label for="nome">
+                Nome:
+            </label>
+            <br />
+            <input type="text" nome= "nome" id="nome" required="required"/>
+            <br /><br />
+            <label for="email">
+                E-mail:
+            </label>
+            <br />
+            <input type="email" nome= "email" id="email" required="required" data-mask-selectonfocus="true"/>
+            <br /><br />
+            <label for="telefone">
+                Telefone:
+            </label>
+            <br />
+            <input type="text" nome= "telefone" id="telefone" required="required" />
+            <br /><br />
+            <label for="celular">
+                Celular:
+            </label>
+            <br />
+            <input type="text" nome= "celular" id="celular" required="required"/>
+            <br /><br />
+            <label for="cpf">
+                CPF:
+            </label>
+            <br />
+            <input type="text" nome = "cpf" id="cpf" required="required"/>
+            <br /><br />
+            <label for="senha">
+                Senha:
+            </label>
+            <br />
+            <input type="password" nome = "senha" id="senha" required="required" />
+            <br /><br />
+            <label for="repetir-senha">
+                Repetir Senha:
+            </label>
+            <br />
+            <input type="password" nome= "repetir-senha" id="repetir-senha" required="required"/>
+            <br /><br />
+            <h1 class="titulo">Endereço para entrega</h1>
+            
+             <label for="rua">
+                Rua:
+            </label>
+            <br />
+            <input type="text" nome= "rua" id="rua" required="required"/>
+            <br /><br />
+             <label for="numero">
+                Número:
+            </label>
+            <br />
+            <input type="text" nome= "numero" id="numero" required="required"/>
+            <br /><br />
+             <label for="bairro">
+                Bairro:
+            </label>
+            <br />
+            <input type="text" nome= "bairro" id="bairro" required="required"/>
+            <br /><br />
+             <label for="cep">
+                CEP:
+            </label>
+            <br />
+            <input type="text" nome= "cep" id="cep" required="required"/>
+            <br /><br />
+
+            <button class="btn-cancelar">Cancelar</button>
+            <button class="btn-salvar" onclick="return validarFormulario();">Salvar</button>
+        </form>
+    </div>
+
+
+
+    <footer id = 'rodape' class="rodape-prin">
+    	<nav class="menu-rodape">
+			<ul>
+				<li><a href="#">televendas 4003-1000</a></li>
+				<li><a href="#">atendimento</a></li>
+				<li><a href="#">cartão americanas.com</a></li>
+				<li><a href="#">ame digital</a></li>
+				<li><a href="#">lista de casamento</a></li>
+				<li><a href="#">anuncie</a></li>
+				<li><a href="#">marketplace</a></li>
+			</ul>
+		</nav>
+
+		<ul class="icones-sociais">
+            <li><a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Icone do Twitter"></a></li>
+            <li><a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Icone do Facebook"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Icone do Instagram">
+            </a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="Icone do Linked in"></a></li>
+        </ul>
+        <br>
+        <div class="copy"> &copy; Mirelly&Sávio 2019  </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
